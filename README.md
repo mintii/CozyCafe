@@ -1,3 +1,16 @@
+This project was built off of this code pen https://codepen.io/shamim539/pen/jONJyyw
+I convert it to React 
+
+Resources used: 
+https://beta.reactjs.org/
+https://create-react-app.dev/
+https://getbootstrap.com/docs/5.0/
+https://react-bootstrap.github.io/
+
+UI Inspo
+https://app.tryeraser.com/workspace/90EEh2R9BDtShRa9nMj7?origin=share
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
