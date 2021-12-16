@@ -16,6 +16,8 @@ Inspired by a CodePen for a menu built with Bootstrap, I converted it into a Rea
 
 [UI Inspo](https://app.tryeraser.com/workspace/90EEh2R9BDtShRa9nMj7?origin=share)
 
+Images are courtesy of [FlatIcon.com](FlatIcon.com). Additional references and attribution are in `index.html`
+
 [Coolors Pallete](https://coolors.co/d6a2ad-42242d-a0af84-f3f7f5-030301)
 
 ```
@@ -25,6 +27,7 @@ Inspired by a CodePen for a menu built with Bootstrap, I converted it into a Rea
 "Cultured":"f3f7f5",
 "Rich Black FOGRA 39":"030301"}
 ```
+
 
 # Getting Started with Create React App
 
