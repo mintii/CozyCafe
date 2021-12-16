@@ -1,18 +1,30 @@
-This project was built off of this code pen https://codepen.io/shamim539/pen/jONJyyw
-I convert it to React 
+# Cozy Cafe
 
-Resources used: 
-https://beta.reactjs.org/
-https://create-react-app.dev/
-https://getbootstrap.com/docs/5.0/
-https://react-bootstrap.github.io/
+Inspired by a CodePen for a menu built with Bootstrap, I converted it into a React application while utilizing Bootstrap in a functional component perspective.
 
-UI Inspo
-https://app.tryeraser.com/workspace/90EEh2R9BDtShRa9nMj7?origin=share
+#### You can see the original by user `shamim khan` [Restaurant - Food menu tab #03](https://codepen.io/shamim539/pen/jONJyyw)
 
-https://coolors.co/d6a2ad-42242d-a0af84-f3f7f5-030301
+## Resources used:
 
-https://bennettfeely.com/clippy/
+[React Beta Docs](https://beta.reactjs.org/)
+
+[Project Built with Create-React-App](https://create-react-app.dev/)
+
+[Bootstrap 5.0](https://getbootstrap.com/docs/5.0/)
+
+[React-Bootstrap](https://react-bootstrap.github.io/)
+
+[UI Inspo](https://app.tryeraser.com/workspace/90EEh2R9BDtShRa9nMj7?origin=share)
+
+[Coolors Pallete](https://coolors.co/d6a2ad-42242d-a0af84-f3f7f5-030301)
+
+```
+{"Pastel Pink":"d6a2ad",
+"Dark Sienna":"42242d",
+"Laurel Green":"a0af84",
+"Cultured":"f3f7f5",
+"Rich Black FOGRA 39":"030301"}
+```
 
 # Getting Started with Create React App
 
@@ -42,45 +54,3 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
