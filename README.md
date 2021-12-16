@@ -10,6 +10,9 @@ https://react-bootstrap.github.io/
 UI Inspo
 https://app.tryeraser.com/workspace/90EEh2R9BDtShRa9nMj7?origin=share
 
+https://coolors.co/d6a2ad-42242d-a0af84-f3f7f5-030301
+
+https://bennettfeely.com/clippy/
 
 # Getting Started with Create React App
 

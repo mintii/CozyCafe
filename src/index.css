@@ -83,15 +83,13 @@ body {
   margin-bottom: 75px;
   transition: .3s;
 }
-.single_menu:hover img{
--webkit-clip-path: polygon(3% 20%, 16% 5%, 37% 2%, 51% 25%, 64% 2%, 87% 6%, 97% 22%, 100% 47%, 95% 71%, 51% 100%, 11% 73%, 0 48%);
-clip-path: polygon(3% 20%, 16% 5%, 37% 2%, 51% 25%, 64% 2%, 87% 6%, 97% 22%, 100% 47%, 95% 71%, 51% 100%, 11% 73%, 0 48%);
-}
+
 .single_menu img {
   width: 30%;
   position: absolute;
   height: 140px;
-  transition: .3s;
+  width: 140px;
+  /* transition: .3s; */
   border: 1px solid #ddd;
   border-radius: 5px;
 }
@@ -153,4 +151,19 @@ z-index: -1;
 .btn.btn-danger:hover:before{
   top: 0;
   left: 0;
+}
+.order-button.btn{
+  position: absolute;
+  margin-top: 110px;
+  margin-left: 15px;
+  background-color: #D6A2AD;
+  border-color: #D6A2AD;
+}
+.order-button.btn:hover{
+  background-color: #C77F8F;
+    border-color: #C77F8F;
+}
+.order-button.btn:focus{
+  background-color: #C77F8F;
+    border-color: #C77F8F;
 }
