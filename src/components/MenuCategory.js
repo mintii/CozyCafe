@@ -1,121 +1,41 @@
+import { useState } from 'react';
 import Dish from "./Dish";
+import data from "../data/cozy_cafe_dishes.json"
 
 const MenuCategory = ({ type }) => {
-  let getMenu;
-
-  switch (type) {
-    case "lunch":
-      getMenu = 
-      <div
-      className="tab-pane fade show active"
-      id="breakfast"
-      role="tabpanel"
-      aria-labelledby="breakfast-tab"
-    >
+  const [cozyCafeDishes, _ ] = useState(data);
+  
+  const gatherDishes = (type) => {
+    if( !Object.keys(cozyCafeDishes).includes(type)) {
+      return "foo"
+    }
+    const columnStart = Math.round(cozyCafeDishes[type].length / 2);
+    return (
       <div className="row">
         <div className="col-md-6">
-          {/* You can fit 6 dishes per column */}
-          <Dish
-            dishName={"Chicken Burger"}
-            price={"$24"}
-            description={
-              "Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis."
-            }
-            dishImage={"https://i.imgur.com/kbpceNv.jpg"}
-            dishImageAlt={"burger"}
-          />
+          {cozyCafeDishes[type].slice(0, columnStart).map(
+            (dish, index) => <Dish key={index} {...dish}/>)
+          }
         </div>
         <div className="col-md-6">
-          <Dish
-            dishName={"Chicken Burger"}
-            price={"$24"}
-            description={
-              "Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis."
-            }
-            dishImage={"https://i.imgur.com/kbpceNv.jpg"}
-            dishImageAlt={"burger"}
-          />
+          {cozyCafeDishes[type].slice(columnStart).map(
+            (dish, index) => <Dish key={index} {...dish}/>)
+          }
         </div>
       </div>
-    </div>;
-      break;
-    case "breakfast":
-      getMenu = 
-        <div
-          className="tab-pane fade show active"
-          id="breakfast"
-          role="tabpanel"
-          aria-labelledby="breakfast-tab"
-        >
-          <div className="row">
-            <div className="col-md-6">
-              {/* You can fit 6 dishes per column */}
-              <Dish
-                dishName={"Chicken Burger"}
-                price={"$24"}
-                description={
-                  "Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis."
-                }
-                dishImage={"https://i.imgur.com/kbpceNv.jpg"}
-                dishImageAlt={"burger"}
-              />
-            </div>
-            <div className="col-md-6">
-              <Dish
-                dishName={"Chicken Burger"}
-                price={"$24"}
-                description={
-                  "Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis."
-                }
-                dishImage={"https://i.imgur.com/kbpceNv.jpg"}
-                dishImageAlt={"burger"}
-              />
-            </div>
-          </div>
-        </div>;
-      break;
-    case "dinner":
-      getMenu = 
-        <div
-          className="tab-pane fade show active"
-          id="breakfast"
-          role="tabpanel"
-          aria-labelledby="breakfast-tab"
-        >
-          <div className="row">
-            <div className="col-md-6">
-              {/* You can fit 6 dishes per column */}
-              <Dish
-                dishName={"sdfdsdsfdf Burger"}
-                price={"$24"}
-                description={
-                  "Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis."
-                }
-                dishImage={"https://i.imgur.com/kbpceNv.jpg"}
-                dishImageAlt={"burger"}
-              />
-            </div>
-            <div className="col-md-6">
-              <Dish
-                dishName={"Chicken Burger"}
-                price={"$24"}
-                description={
-                  "Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe facilis."
-                }
-                dishImage={"https://i.imgur.com/kbpceNv.jpg"}
-                dishImageAlt={"burger"}
-              />
-            </div>
-          </div>
-        </div>;
-      break;
-    default:
-      getMenu = <div>foo</div>;
+    )
   }
 
   return (
     <div className="tab-content col-lg-12" id="myTabContent">
-      {getMenu}
+      <div
+        className="tab-pane fade show active"
+        id={type}
+        role="tabpanel"
+        aria-labelledby="`{type} +` tab "
+      >
+        {gatherDishes(type)}
+      </div>
     </div>
   );
 };
